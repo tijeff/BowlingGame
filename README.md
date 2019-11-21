@@ -7,7 +7,8 @@ Step realized:
 2. All rolls with no pins
 3. All rolls with one pin fallen
 4. Treat spare frame
+5. Treat strike frame
 
 Next step: 
 
-* strike case
+* treat perfect game

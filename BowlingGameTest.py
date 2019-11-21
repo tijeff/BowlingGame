@@ -16,6 +16,9 @@ class BowlingGameTestCase(unittest.TestCase):
         self.game.roll(4)
         self.game.roll(6)
 
+    def rollStrike(self):
+        self.game.roll(10)
+
     def testGutterGame(self):
         self.manyLoop(20, 0)
         self.assertEqual(0, self.game.score())
@@ -28,7 +31,15 @@ class BowlingGameTestCase(unittest.TestCase):
         self.rollSpare()
         self.game.roll(3)
         self.manyLoop(17, 0)
-        self.assertEqual(16, self.game.score()) # 10 + 2*3
+        self.assertEqual(16, self.game.score())  # 10 + 2*3
+
+    def testStrike(self):
+        self.game.roll(10)  # Strike
+        self.game.roll(3)
+        self.game.roll(4)
+        self.manyLoop(16, 0)
+        self.assertEqual(24, self.game.score())
+
 
 if __name__ == '__main__':
     unittest.main()
