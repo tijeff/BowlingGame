@@ -18,3 +18,4 @@ Current step:
   * try to treat spare
   * revert to previous state to treat frame case
   * compute score frame by frame
+  * readd spare test
