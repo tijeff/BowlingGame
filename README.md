@@ -14,3 +14,4 @@ Current step:
   * go back to add frame concept in code
   * add save of all rolls    
   * refactor to compute score with frame concept
+  * re-add spare test
