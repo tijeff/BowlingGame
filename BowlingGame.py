@@ -10,6 +10,9 @@ class Game():
         score = 0
         rool_index = 0
         for _ in range(10):
-            score += self.__rolls[rool_index]+self.__rolls[rool_index+1]
-            rool_index += 2
+           frame_score = self.__rolls[rool_index]+self.__rolls[rool_index+1]
+           score += frame_score
+           if frame_score == 10:
+               score += self.__rolls[rool_index+2]
+           rool_index += 2
         return score
