@@ -8,6 +8,8 @@ class Game():
 
     def score(self):
         score = 0
-        for roll in self.__rolls:
-            score += roll
+        rool_index = 0
+        for _ in range(10):
+            score += self.__rolls[rool_index]+self.__rolls[rool_index+1]
+            rool_index += 2
         return score
