@@ -8,6 +8,7 @@ Step realized:
 3. All rolls with one pin fallen
 4. Treat spare frame
 
-Next step: 
+Current step: 
 
 * strike case
+  * create strike test
