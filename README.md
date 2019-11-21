@@ -13,3 +13,4 @@ Current step:
   * add field BowlingGame::__score
   * Refactor tests: add setUp method in test
   * Refactor tests: suppress duplicated code (loop)
+  * Refactor tests: add parameter pins in method BowlingGame::manyRoll   
