@@ -1,9 +1,10 @@
 import unittest
+from BowlingGame import Game
 
 
 class BowlingGameTestCase(unittest.TestCase):
     def testGutterGame(self):
-        game = BowlingGame()
+        game = Game()
 
 
 if __name__ == '__main__':
