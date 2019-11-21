@@ -10,5 +10,6 @@ Current step:
 * Create unit test
   * test file created 
   * first tests created
-  * tested file & class created
+  * tested file & class under test created
+  * create method roll
   
