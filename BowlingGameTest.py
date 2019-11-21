@@ -7,7 +7,7 @@ class BowlingGameTestCase(unittest.TestCase):
         game = Game()
         for _ in range(20):
             game.roll(0)
-        self.fail()
+        self.assertEqual(0, game.score())
 
 if __name__ == '__main__':
     unittest.main()
