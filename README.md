@@ -15,3 +15,4 @@ Current step:
   * add save of all rolls    
   * refactor to compute score with frame concept
   * re-add spare test
+  * try to treat spare
