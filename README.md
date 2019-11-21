@@ -13,3 +13,4 @@ Current step:
 * strike case
   * create strike test
   * code strike treatment
+  * refactor create is_strike method 

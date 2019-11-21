@@ -9,11 +9,14 @@ class Game():
     def is_spare(self, frame_index):
         return self.__rolls[frame_index] + self.__rolls[frame_index + 1] == 10
 
+    def is_strike(self, roll_index):
+        return self.__rolls[roll_index] == 10
+
     def score(self):
         score = 0
         rool_index = 0
         for _ in range(10):
-            if self.__rolls[rool_index] == 10:  # strike
+            if self.is_strike(rool_index):  # strike
                 score += 10 + self.__rolls[rool_index+1] + self.__rolls[rool_index+2]
                 rool_index += 1
             else:
