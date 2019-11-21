@@ -20,5 +20,12 @@ class BowlingGameTestCase(unittest.TestCase):
         self.manyLoop(20, 1)
         self.assertEqual(20, self.game.score())
 
+    def testSpare(self):
+        self.game.roll(4)
+        self.game.roll(6) # Spare on first frame
+        self.game.roll(3)
+        self.manyLoop(17, 0)
+        self.assertEqual(16, self.game.score()) # 10 + 2*3
+
 if __name__ == '__main__':
     unittest.main()

@@ -7,6 +7,7 @@ Step realized:
 2. All rolls with no pins
 3. All rolls with one pin fallen
 
-Next step: 
+Current step: 
 
 * spare case
+  * create test for SPARE case
