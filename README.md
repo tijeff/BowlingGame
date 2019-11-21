@@ -12,3 +12,4 @@ Current step:
 * spare case
   * create test for SPARE case
   * go back to add frame concept in code
+  * add save of all rolls    
