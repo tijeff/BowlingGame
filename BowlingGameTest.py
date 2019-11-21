@@ -16,6 +16,9 @@ class BowlingGameTestCase(unittest.TestCase):
         self.game.roll(4)
         self.game.roll(6)
 
+    def rollStrike(self):
+        self.game.roll(10)
+
     def testGutterGame(self):
         self.manyLoop(20, 0)
         self.assertEqual(0, self.game.score())
