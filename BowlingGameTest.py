@@ -40,6 +40,11 @@ class BowlingGameTestCase(unittest.TestCase):
         self.manyLoop(16, 0)
         self.assertEqual(24, self.game.score())
 
+    def testPerfectGame(self):
+        for _ in range(12):
+            self.rollStrike()
+        self.assertEqual(300, self.game.score())
+
 
 if __name__ == '__main__':
     unittest.main()
