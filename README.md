@@ -10,3 +10,4 @@ Current step:
 
 * All roll with 1 pins fallen
   * create new test
+  * add field BowlingGame::__score
