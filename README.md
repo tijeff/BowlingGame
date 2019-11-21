@@ -9,6 +9,6 @@ Step realized:
 4. Treat spare frame
 5. Treat strike frame
 
-Next step: 
+Current step: 
 
-* treat perfect game
+* add test for perfect game (all strike)
