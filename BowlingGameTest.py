@@ -2,7 +2,8 @@ import unittest
 
 
 class BowlingGameTestCase(unittest.TestCase):
-    pass
+    def testGutterGame(self):
+        game = BowlingGame()
 
 
 if __name__ == '__main__':
