@@ -5,6 +5,7 @@ Step realized:
 
 1. Project & Git environment created...
 
-Next step: 
+Current step: 
 
 * Create unit test
+  * test file created 
