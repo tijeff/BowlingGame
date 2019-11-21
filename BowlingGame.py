@@ -13,9 +13,13 @@ class Game():
         score = 0
         rool_index = 0
         for _ in range(10):
-           frame_score = self.__rolls[rool_index]+self.__rolls[rool_index+1]
-           score += frame_score
-           if self.is_spare(rool_index):
-               score += self.__rolls[rool_index+2]
-           rool_index += 2
+            if self.__rolls[rool_index] == 10:  # strike
+                score += 10 + self.__rolls[rool_index+1] + self.__rolls[rool_index+2]
+                rool_index += 1
+            else:
+                frame_score = self.__rolls[rool_index]+self.__rolls[rool_index+1]
+                score += frame_score
+                if self.is_spare(rool_index):
+                    score += self.__rolls[rool_index+2]
+                rool_index += 2
         return score

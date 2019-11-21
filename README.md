@@ -12,3 +12,4 @@ Current step:
 
 * strike case
   * create strike test
+  * code strike treatment
