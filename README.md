@@ -20,3 +20,4 @@ Current step:
   * compute score frame by frame
   * readd spare test
   * treat spare
+  * refactore to add a explicite test for frame
