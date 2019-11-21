@@ -8,9 +8,12 @@ class BowlingGameTestCase(unittest.TestCase):
     def setUp(self):
         self.game = Game()
 
-    def testGutterGame(self):
+    def manyLoop(self):
         for _ in range(20):
             self.game.roll(0)
+
+    def testGutterGame(self):
+        self.manyLoop()
         self.assertEqual(0, self.game.score())
 
     def testAllOnes(self):

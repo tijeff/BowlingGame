@@ -12,3 +12,4 @@ Current step:
   * create new test
   * add field BowlingGame::__score
   * Refactor tests: add setUp method in test
+  * Refactor tests: suppress duplicated code (loop)
