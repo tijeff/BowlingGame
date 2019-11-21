@@ -3,17 +3,20 @@ from BowlingGame import Game
 
 
 class BowlingGameTestCase(unittest.TestCase):
+    game = None
+
+    def setUp(self):
+        self.game = Game()
+
     def testGutterGame(self):
-        game = Game()
         for _ in range(20):
-            game.roll(0)
-        self.assertEqual(0, game.score())
+            self.game.roll(0)
+        self.assertEqual(0, self.game.score())
 
     def testAllOnes(self):
-        game = Game()
         for _ in range(20):
-            game.roll(1)
-        self.assertEqual(20, game.score())
+            self.game.roll(1)
+        self.assertEqual(20, self.game.score())
 
 if __name__ == '__main__':
     unittest.main()
